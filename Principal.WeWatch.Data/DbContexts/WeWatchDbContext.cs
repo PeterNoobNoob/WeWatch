@@ -15,9 +15,14 @@ namespace Principal.We_Watch.Data.DbContexts
         public DbSet<Report> Reports { get; set; }
         public DbSet<User> Users { get; set; }
 
-        public WeWatchDbContext(DbContextOptions options): base(options)
+        public WeWatchDbContext()
         {
-
         }
+
+        public WeWatchDbContext(DbContextOptions<WeWatchDbContext> options)
+            : base(options)
+        {
+        }
+
     }
 }
