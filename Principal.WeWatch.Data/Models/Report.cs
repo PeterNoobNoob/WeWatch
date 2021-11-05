@@ -6,14 +6,12 @@ using System.Text;
 
 namespace Principal.WeWatch.Data.Models
 {
-    public class RejectedRequests
+    public class Report
     {
         [Key]
         public int Id { get; set; }
-        [ForeignKey("User")]
-        public int UserId { get; set; }
         [ForeignKey("Incident")]
         public int IncidentId { get; set; }
-        public DateTime Created { get; set; }
+        public string HttpLink { get; set; }
     }
 }
