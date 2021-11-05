@@ -13,14 +13,14 @@ namespace Principal.WeWatch.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    IncidentId = table.Column<int>(nullable: false),
+                    OwnerId = table.Column<int>(nullable: false),
                     DateOfEvent = table.Column<DateTime>(nullable: false),
                     Latitude = table.Column<double>(nullable: false),
                     Longitude = table.Column<double>(nullable: false),
                     Description = table.Column<string>(nullable: true),
                     Created = table.Column<DateTime>(nullable: false),
-                    Updated = table.Column<DateTime>(nullable: false),
-                    IncidentId = table.Column<int>(nullable: false),
-                    OwnerId = table.Column<int>(nullable: false)
+                    Updated = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -33,17 +33,17 @@ namespace Principal.WeWatch.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    OwnerId = table.Column<int>(nullable: false),
                     DateOfEvent = table.Column<DateTime>(nullable: false),
                     Latitude = table.Column<double>(nullable: false),
                     Longitude = table.Column<double>(nullable: false),
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
-                    Created = table.Column<DateTime>(nullable: false),
-                    Updated = table.Column<DateTime>(nullable: false),
                     Type = table.Column<string>(nullable: true),
                     IsClosed = table.Column<bool>(nullable: false),
                     IsOwnerVictim = table.Column<bool>(nullable: false),
-                    OwnerId = table.Column<int>(nullable: false)
+                    Created = table.Column<DateTime>(nullable: false),
+                    Updated = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

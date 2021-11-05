@@ -10,7 +10,7 @@ using Principal.We_Watch.Data.DbContexts;
 namespace Principal.WeWatch.Data.Migrations
 {
     [DbContext(typeof(WeWatchDbContext))]
-    [Migration("20211105141754_InitialWeWatchMigration")]
+    [Migration("20211105142421_InitialWeWatchMigration")]
     partial class InitialWeWatchMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

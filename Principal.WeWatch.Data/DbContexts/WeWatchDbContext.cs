@@ -19,10 +19,5 @@ namespace Principal.We_Watch.Data.DbContexts
         {
 
         }
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Data Source=.;Initial Catalog=WeWatchDb;Integrated Security=True");
-        //}
     }
 }
